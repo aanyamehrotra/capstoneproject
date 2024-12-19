@@ -1,0 +1,410 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FEFCFB;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 48px;
+
+}
+
+#logo {
+    font-family: 'Source Serif 4', serif;
+    font-weight: 600;
+    font-size: 42px;
+    color: #28211B;
+    letter-spacing: -0.04em;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+nav a {
+    font-family: 'Domine', serif;
+    font-size: 28px;
+    color: #28211B;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0;
+    gap: 52px;
+    width: 100%;
+}
+
+.body h1 {
+    font-family: 'Domine', serif;
+    font-weight: 700;
+    font-size: 120px;
+    color: #28211B;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.body img {
+    width: 100%;
+    max-width: 1344px;
+    height: auto;
+    border-radius: 28px;
+    object-fit: cover;
+    scale: 120%;
+}
+
+
+.mainbody {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 52px;
+    padding: 0 48px;
+    margin-bottom: 52px;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.images:hover {
+    transform: translateY(-5px);
+}
+
+.images img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.images p {
+    font-size: 20px;
+    color: #28211B;
+    margin-top: 10px;
+}
+
+.images span {
+    font-size: 17px;
+    color: rgba(46, 33, 20, 0.62);
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 52px 0;
+    gap: 52px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form h1 {
+    font-family: 'Domine', serif;
+    font-weight: 700;
+    font-size: 34px;
+    color: #28211B;
+    letter-spacing: -0.02em;
+}
+
+.form h3 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #28211B;
+    text-align: center;
+}
+
+.name {
+    display: flex;
+    gap: 35px;
+    width: 100%;
+
+}
+
+.first-name, .last-name {
+    flex: 1;
+}
+
+.form input {
+    width: 100%;
+    padding: 14px;
+    background: rgba(125, 81, 38, 0.09);
+    border: none;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #28211B;
+}
+
+.form input::placeholder {
+    color: rgba(46, 33, 20, 0.4);
+}
+
+#placeholder {
+    height: 124px;
+    resize: none;
+}
+
+input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
+    background: #D4A373;
+    color: #000000;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #c29363;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 96px 48px 32px;
+}
+
+footer div {
+    font-family: 'Domine', serif;
+    font-size: 28px;
+    color: rgba(46, 33, 20, 0.62);
+    letter-spacing: -0.02em;
+}
+
+footer button {
+    padding: 14px 32px;
+    border: 1.5px solid rgba(110, 92, 73, 0.2);
+    border-radius: 16px;
+    background: transparent;
+    font-weight: 500;
+    font-size: 20px;
+    color: #28211B;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+footer button:hover {
+    background: rgba(110, 92, 73, 0.1);
+}
+
+
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 20px 24px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 22px;
+    }
+
+    .body {
+        padding: 60px 0;
+    }
+
+    .body h1 {
+        font-size: 72px;
+        padding: 0 20px;
+    }
+
+    .mainbody {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 0 24px;
+    }
+
+    .images img {
+        height: 220px;
+    }
+
+    .form {
+        padding: 40px 24px;
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    #logo {
+        font-size: 36px;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .body h1 {
+        font-size: 48px;
+    }
+
+    .body {
+        padding: 40px 0;
+        gap: 30px;
+    }
+
+    .mainbody {
+        gap: 24px;
+    }
+
+    .images p {
+        font-size: 18px;
+    }
+
+    .images span {
+        font-size: 15px;
+    }
+
+    .form {
+        gap: 30px;
+    }
+
+    .form h1 {
+        font-size: 28px;
+    }
+
+    .form h3 {
+        font-size: 18px;
+    }
+
+    footer {
+        padding: 60px 24px 24px;
+        gap: 20px;
+    }
+
+    footer div {
+        font-size: 22px;
+    }
+
+    footer button {
+        padding: 12px 24px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    nav {
+        padding: 12px;
+    }
+
+    #logo {
+        font-size: 32px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .body h1 {
+        font-size: 36px;
+        padding: 0 16px;
+    }
+
+    .body {
+        padding: 30px 0;
+        gap: 24px;
+    }
+
+    .mainbody {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 16px;
+    }
+
+    .images img {
+        height: 200px;
+    }
+
+    .name {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form {
+        padding: 30px 16px;
+        gap: 24px;
+    }
+
+    .form h1 {
+        font-size: 24px;
+    }
+
+    .form h3 {
+        font-size: 16px;
+    }
+
+    .form input {
+        padding: 12px;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    #placeholder {
+        height: 100px;
+    }
+
+    input[type="submit"] {
+        padding: 10px 16px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 16px 16px;
+    }
+
+    footer div {
+        font-size: 18px;
+    }
+
+    footer button {
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
