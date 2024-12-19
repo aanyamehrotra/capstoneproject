@@ -1,0 +1,498 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FEFCFB;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 48px;
+
+}
+
+#logo {
+    font-family: 'Source Serif 4', serif;
+    font-weight: 600;
+    font-size: 42px;
+    color: #28211B;
+    letter-spacing: -0.04em;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+nav a {
+    font-family: 'Domine', serif;
+    font-size: 28px;
+    color: #28211B;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    transition: color 0.8s ease;
+}
+
+nav ul li a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0;
+    gap: 52px;
+    width: 100%;
+}
+
+.body h1 {
+    font-family: 'Domine', serif;
+    font-weight: 700;
+    font-size: 120px;
+    color: #28211B;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.body img {
+    width: 100%;
+    max-width: 1344px;
+    height: auto;
+    border-radius: 28px;
+    object-fit: cover;
+    scale: 120%;
+    margin-bottom: 200px;
+}
+
+
+.mainbody {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 52px;
+    padding: 0 48px;
+    margin-bottom: 52px;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.images:hover {
+    transform: translateY(-5px);
+}
+
+.images img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.images p {
+    font-size: 20px;
+    color: #28211B;
+    margin-top: 10px;
+}
+
+.images span {
+    font-size: 17px;
+    color: rgba(46, 33, 20, 0.62);
+}
+
+
+/*.form {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 52px 0;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form h1 {
+    font-family: 'Domine', serif;
+    font-weight: 700;
+    font-size: 34px;
+    color: #28211B;
+    margin-bottom: 0;
+}
+.form h3 {
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 20px;
+    color: #28211B;
+    text-align: center;
+}
+
+.name {
+    display: flex;
+    width: 100%;
+    gap: 42px;
+}
+
+.first-name , .last-name{
+    width: 100%;
+}
+
+.form input {
+    width: 100%;
+    padding: 14px;
+    background: rgba(125, 81, 38, 0.09);
+    border: none;
+    border-radius: 16px;
+    font-size: 15px;
+    color: #28211B;
+}
+
+.form input::placeholder {
+    color: rgba(46, 33, 20, 0.4);
+}
+
+#placeholder {
+    height: 124px;
+}
+
+input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
+    background: #D4A373;
+    color: #000000;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #c29363;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 96px 48px 32px;
+}
+
+footer div {
+    font-family: 'Domine', serif;
+    font-size: 28px;
+    color: rgba(46, 33, 20, 0.62);
+    letter-spacing: -0.02em;
+}
+
+footer button {
+    padding: 14px 32px;
+    border: 1.5px solid rgba(110, 92, 73, 0.2);
+    border-radius: 16px;
+    background: transparent;
+    font-weight: 500;
+    font-size: 20px;
+    color: #28211B;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+footer button:hover {
+    background: rgba(110, 92, 73, 0.1);
+}*/
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 52px 0;
+    gap: 30px; 
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    background: #fefcfb;
+    margin: 0 auto;
+  }
+  h1 {
+    font-family: "Domine", serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+    color: #28211b;
+  }
+
+  h3 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #28211b;
+    margin-top: 1px; 
+ }
+
+
+  .name {
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+    width: 103%;
+  }
+
+  .first-name,
+  .last-name {
+    display: flex;
+    flex: 1;
+  }
+
+  .first-name input,
+  .last-name input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 16px;
+    background: rgba(125, 81, 38, 0.09);
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(46, 33, 20, 0.4);
+  }
+
+  input[type="email"],
+  input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    border-radius: 16px;
+    border: none;
+    background: rgba(125, 81, 38, 0.09);
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(46, 33, 20, 0.4);
+  }
+
+  input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
+    background: #d4a373;
+    border-radius: 16px;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #b78e57;
+    color: white;
+  }
+
+
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 20px ;
+        margin-bottom: 0px;
+    }
+    nav ul {
+        gap: 20px;
+    }
+    nav a {
+        font-size: 22px;
+    }
+    .body {
+        padding: 0;
+    }
+    .body h1 {
+        font-size: 72px;
+        padding: 0px;
+        margin: 50px;
+    }
+    .body img{
+        width: 80%;
+    }
+    .mainbody {
+        padding: 0 24px;
+        gap: 25px;
+    }
+    .images img {
+        height: auto;
+    }
+
+    .form {
+        padding: 40px 24px;
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+        padding: 16px;
+    }
+    #logo {
+        font-size: 36px;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: flex-end;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .body h1 {
+        font-size: 48px;
+        margin: 25px;
+    }
+
+    .body {
+        padding:  0;
+        gap: 30px;
+    }
+    .body img{
+        margin-bottom: 100px;
+    }
+
+    .mainbody {
+        gap: 24px;
+        margin-bottom: 0;
+    }
+
+    .images p {
+        font-size: 18px;
+    }
+
+    .images span {
+        font-size: 15px;
+    }
+
+    .form {
+        gap: 30px;
+    }
+
+    .form h1 {
+        font-size: 28px;
+    }
+
+    .form h3 {
+        font-size: 18px;
+    }
+
+    footer {
+        padding: 0px 24px 24px;
+        gap: 20px;
+    }
+
+    footer div {
+        font-size: 20px;
+    }
+
+    footer button {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    nav {
+        padding: 12px;
+    }
+
+    #logo {
+        font-size: 22px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .body h1 {
+        font-size: 36px;
+        padding: 0 16px;
+    }
+    .body img{
+        margin: 50px;
+        margin-top: 10px;
+    }
+    .body {
+        padding: 0;
+        margin-bottom: 10px;
+        gap: 24px;
+    }
+
+    .mainbody {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 0 16px;
+    }
+
+    .images img {
+        height: auto;
+    }
+
+    .name {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .form {
+        padding: 30px 16px;
+        gap: 5px;
+    }
+
+    .form h1 {
+        font-size: 24px;
+    }
+
+    .form h3 {
+        font-size: 16px;
+    }
+
+    .form input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    #placeholder {
+        height: 100px;
+    }
+
+    input[type="submit"] {
+        padding: 10px 16px;
+        
+    }
+
+    footer {
+        text-align: center;
+        padding: 0px 16px 16px;
+    }
+
+    footer div {
+        font-size: 18px;
+    }
+
+    footer button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
